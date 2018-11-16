@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="Keywords" content="关键词,关键词" />
+    <meta name="description" content="描述" />
+    <title>锤子官网移动端--- 初学者</title>
+
+    <!-- 引入外部文件 -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="Al_iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/public.css" type='text/css'/>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css" type='text/css'/>
+    <link rel="stylesheet" href="css/index.css" type='text/css'/>
+    
+    
+    <!-- 移动端适配 -->
+    <script>
+        var html = document.querySelector('html');
+        changeRem();
+        window.addEventListener('resize',changeRem);
+        function changeRem() {
+            var width = html.getBoundingClientRect().width;
+            //console.log( width );
+            html.style.fontSize = width/10+ 'px';
+        }
+
+    </script>
+</head>
+<body>
+    <!-- 锤子官网-移动端网页 -->
+    <div class="smartisan">
+        <!-- 移动端网页---头部 -->
+        <div class="cz-header">
+            <!-- 顶部栏 -->
+            <header class='cz-h-header'>
+                <div class="sidebar">
+                    <p>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+                <!-- logo图 -->
+                <h1>
+                    <a href="javascript:;"></a>
+                </h1>
+            </header>
+        </div>
+        
+        
+        
+        
+        
+        <!-- 移动端网页---身体 -->
+        <div class="cz-body">
+            <!-- 轮播图区块 -->
+            <section class="sec-wrap">
+                <!-- 轮播图开始 -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="images/02-banner/1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="images/02-banner/2.png" alt="">
+                            </a>
+                        </div>    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="nav">
+                    <a href=""><img src="images/03-nav/icon_03.png" alt=""><span>坚果 Pro</span></a>
+                    <a href=""><img src="images/03-nav/icon_04.png" alt=""><span>服装</span></a>
+                    <a href=""><img src="images/03-nav/icon_05.png" alt=""><span>"足迹系列"</span></a>
+                    <a href=""><img src="images/03-nav/icon_06.png" alt=""><span>保险</span></a>
+                    <a href=""><img src="images/03-nav/icon_07.png" alt=""><span>以旧换新</span></a>
+                </div>
+            </section>
+            <!-- 热门商品区块 -->
+            <section class="sec-wrap hot-goods">
+                <!-- 标题 -->
+                <h2>热门商品<i class="iconfont icon-qiehuanqiyou"></i></h2>
+               <!-- 商品内容 -->
+                <div class='container'>
+                    <div class="swiper-container-hot hot-c-box">
+                        <ul class="swiper-wrapper hot-c-wrap">
+                            <li class="swiper-slide hot-content">
+                                <a href="">
+                                    <img src="images/04-goods/1.png" alt="">
+                                    <span>卫衣 大爆炸</span>
+                                    <p>风格简洁、舒适服帖</p>
+                                    <em>￥249.00</em>
+                                </a>
+                            </li>
+                            <li class="swiper-slide hot-content">
+                                <a href="">
+                                    <img src="images/04-goods/2.jpg" alt="">
+                                    <span>S-1001 圈铁耳机</span>
+                                    <p>极简造型、复合振膜</p>
+                                    <em>￥199.00</em>
+                                </a>
+                            </li>
+                            <li class="swiper-slide hot-content">
+                                <a href="">
+                                    <img src="images/04-goods/3.jpg" alt="">
+                                    <span>钢化保护膜</span>
+                                    <p>坚果 Pro(前屏用)</p>
+                                    <em>￥49.00</em>
+                                </a>
+                            </li>
+                            <li class="swiper-slide hot-content">
+                                <a href="">
+                                    <img src="images/04-goods/4.png" alt="">
+                                    <span>软胶保护套</span>
+                                    <p>Smartisan M1/M1L 适用</p>
+                                    <em>￥19.00</em><del>￥49.00</del>
+                                </a>
+                            </li>
+                            <li class="swiper-slide hot-content">
+                                <a href="">
+                                    <img src="images/04-goods/5.png" alt="">
+                                    <span>FIIL CARAT LITE</span>
+                                    <p>蓝牙运动耳机</p>
+                                    <em>￥299.00</em>
+                                </a>
+                            </li>
+                            <li class="swiper-slide hot-content">
+                                <a href="">
+                                    <img src="images/04-goods/6.jpg" alt="">
+                                    <span>记事本</span>
+                                    <p>优质米色纸、不洇不透</p>
+                                    <em>￥49.00</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 开始 热门机型 -->
+            <section class="sec-wrap hot-phone">
+                <h2>热销机型</h2>
+                <div class="hot-p-wrap">
+                    <img src="images/05-phone/1.png" alt="">
+                    <div class="phone-pro">
+                        <h4>坚果 Pro</h4>
+                        <span>32G</span>
+                        <span>64G</span>
+                        <span>128G</span>
+                    </div>
+                    <span>漂亮的不像实力派</span>
+                    <div class="price">
+                        <em>￥1,599.00</em><del>￥1,799.00</del>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 开始 热卖 -->
+            <section class='sec-wrap hot-sale'>
+                <a href=""><img src="images/06-section/1.png" alt=""></a>
+                <a href=""><img src="images/06-section/2.png" alt=""></a>
+            </section>
+
+            <!-- 开始 官方精选 -->
+            <section class="sec-wrap official">
+                <h2>官方精选<i class="iconfont icon-qiehuanqiyou"></i></h2>
+                <ul class="off-wrap hot-c-box">
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/07-brand/1.jpg" alt="">
+                            <span>软胶保护套</span>
+                            <p>适用于坚果Pro、耐磨、耐油</p>
+                            <em>￥49.00</em>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/07-brand/2.jpg" alt="">
+                            <span>半入耳式耳机</span>
+                            <p>卓越的 14.2mm 发音单元</p>
+                            <em>￥99.00</em>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/07-brand/3.jpg" alt="">
+                            <span>钢化保护膜</span>
+                            <p>坚果 Pro (前屏用)</p>
+                            <em>￥49.00</em>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/07-brand/4.jpg" alt="">
+                            <span>车载充电器</span>
+                            <p>双口 & 快充</p>
+                            <em>￥99.00</em>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/07-brand/5.jpg" alt="">
+                            <span>Smartisan 坚果自拍杆</span>
+                            <p>航空铝合金伸缩杆</p>
+                            <em>￥69.00</em>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/07-brand/6.jpg" alt="">
+                            <span>原装充电器</span>
+                            <p>18W 安全快充</p>
+                            <em>￥59.00</em>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- 开始 热卖2 -->
+            <section class='sec-wrap hot-sale'>
+                <a href=""><img src="images/08-section/1.png" alt=""></a>
+                <a href=""><img src="images/08-section/2.png" alt=""></a>
+            </section>
+
+            <!-- 开始 品牌精选 -->
+            <section class="sec-wrap brand">
+                <h2>品牌精选<i class="iconfont icon-qiehuanqiyou"></i></h2>
+                <ul class="brand-wrap hot-c-box">
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/09-brand/1.png" alt="">
+                            <span>FIIL CARAT LITE</span>
+                            <p>蓝牙运动耳机</p>
+                            <em>￥299.00</em>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/09-brand/2.jpg" alt="">
+                            <span>《日本制造》</span>
+                            <p>盛田绍夫的日式经营学</p>
+                            <em>￥58.00</em>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/09-brand/3.jpg" alt="">
+                            <span>FIIL CARAT</span>
+                            <p>蓝牙运动耳机</p>
+                            <em>￥499.00</em>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/09-brand/4.jpg" alt="">
+                            <span>《深泽直人》</span>
+                            <p>首次面向中国读者介绍其作品</p>
+                            <em>￥199.00</em>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/09-brand/5.jpg" alt="">
+                            <span>极米 CC</span>
+                            <p>720P 高清分辨率、JBL 音响</p>
+                            <em>￥2,599.00</em><del>￥2,799.00</del>
+                        </a>
+                    </li>
+                    <li class="hot-content">
+                        <a href="">
+                            <img src="images/09-brand/6.jpg" alt="">
+                            <span>FIIL Diva Pro</span>
+                            <p>智能语音交互</p>
+                            <em>￥1,499.00</em>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- 移动端网页---底部 -->
+        <div class="cz-footer">
+            <section class='footer-nav'>
+                <a href=""><img src="images/10-footer/1.png" alt=""><span>首页</span></a>
+                <a href=""><img src="images/10-footer/2.png" alt=""><span>分类</span></a>
+                <a href=""><img src="images/10-footer/3.png" alt=""><span>购物车</span></a>
+                <a href=""><img src="images/10-footer/4.png" alt=""><span>个人中心</span></a>
+            </section>
+        </div>
+    </div>
+
+
+    <script src='js/swiper-3.4.2.min.js'></script>
+     <!-- 轮播图 js部分 -->
+    <script> 
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 1000,//可选选项，自动滑动
+            loop : true,
+            pagination : '.swiper-pagination',            
+        })
+
+        var mySwiper = new Swiper('.swiper-container-hot',{
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          
+        })
+    </script>
+</body>
+</html>

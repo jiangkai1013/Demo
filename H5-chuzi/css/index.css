@@ -1,0 +1,306 @@
+@charset 'utf-8';
+body {
+  background: #eee;
+}
+/*网页头部*/
+.cz-h-header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.38666667rem;
+  background: #000;
+}
+.cz-h-header .sidebar {
+  position: relative;
+  width: 1.65333333rem;
+  height: 100%;
+}
+.cz-h-header .sidebar span {
+  display: block;
+  width: 0.56rem;
+  height: 0.08666667rem;
+  background: #eee;
+  border-radius: 0.01333333rem;
+  margin-bottom: 0.06666667rem;
+}
+.cz-h-header .sidebar > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -0.24rem 0 0 -0.22666667rem;
+}
+/*开始  logo*/
+.cz-header h1 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -0.66666667rem;
+  width: 1.38666667rem;
+  height: 1.38666667rem;
+  background: url('../images/01-header/1.png') no-repeat top / cover;
+}
+.cz-header h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*开始 banner-wrap*/
+.sec-wrap {
+  margin-bottom: 0.13333333rem;
+  background: #fff;
+  box-shadow: 0 0.06666667rem 0.13333333rem #ddd;
+}
+/*开始  banner*/
+.swiper-container {
+  overflow: hidden;
+  border-radius: 0.2rem;
+  height: 3.88rem;
+  padding-top: 1.78666667rem;
+  margin: 0 0.33333333rem 0;
+}
+.swiper-container img {
+  width: 100%;
+  height: 100%;
+}
+/*分页器*/
+.swiper-container .swiper-pagination-bullet {
+  background: #fff;
+  transform: scale(0.8);
+}
+/*导航开始*/
+.nav {
+  display: flex;
+  padding-bottom: 0.46666667rem;
+  margin: 0.53333333rem 0.33333333rem 0;
+}
+.nav a {
+  flex: 1;
+  padding: 0.06666667rem 0;
+  height: 1.28rem;
+  text-align: center;
+}
+.nav a img {
+  width: 0.66666667rem;
+  height: 0.66666667rem;
+}
+.nav a span {
+  display: block;
+  margin-top: 0.22666667rem;
+  font-size: 0.26666667rem;
+  line-height: 0.4rem;
+  color: #999;
+}
+/*开始  热门商品*/
+.sec-wrap h2 {
+  position: relative;
+  padding: 0 0.33333333rem;
+  height: 1.10666667rem;
+  line-height: 1.10666667rem;
+  font-size: 0.42666667rem;
+  color: #666;
+  text-overflow: ellipsis;
+}
+.sec-wrap h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.01333333rem;
+  background: #eee;
+}
+.sec-wrap h2 i {
+  position: absolute;
+  right: 0.33333333rem;
+}
+.swiper-container-hot {
+  overflow: hidden;
+  height: 5.05333333rem;
+  padding: 0.50666667rem 0;
+}
+.hot-c-box .hot-c-wrap {
+  margin: 0 0.33333333rem;
+  display: flex;
+  align-content: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.hot-c-box .hot-content {
+  margin-right: 0.13333333rem;
+  font-size: 0.32rem;
+  text-indent: 1em;
+  line-height: 0.53333333rem;
+}
+.hot-c-box .hot-content img {
+  display: block;
+  width: 2.93333333rem;
+  height: 2.93333333rem;
+  margin-bottom: 0.26666667rem;
+  border: 0.01333333rem solid #ddd;
+  border-radius: 0.13333333rem;
+}
+.hot-c-box .hot-content span {
+  display: block;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hot-c-box .hot-content p {
+  font-size: 0.25333333rem;
+  color: #999;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hot-c-box .hot-content em {
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  color: #cc3333;
+}
+.hot-c-box .hot-content del {
+  display: inline-block;
+  font-size: 0.24rem;
+  color: #999;
+}
+/*开始  热门机型*/
+.hot-phone .hot-p-wrap {
+  height: 11.38666667rem;
+  padding: 0.53333333rem 0.33333333rem;
+  font-size: 0.34666667rem;
+  text-align: center;
+}
+.hot-phone .hot-p-wrap img {
+  display: block;
+  height: 9.33333333rem;
+}
+.hot-phone .hot-p-wrap .phone-pro {
+  font-weight: bold;
+}
+.hot-phone .hot-p-wrap .phone-pro h4 {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.hot-phone .hot-p-wrap .phone-pro span {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 0.13333333rem;
+  line-height: 0.34666667rem;
+  padding: 0 0.16rem;
+  background: #e5efff;
+  color: #436dcf;
+  border: 0.01333333rem solid #acc5f9;
+  border-radius: 0.06666667rem;
+}
+.hot-phone .hot-p-wrap .phone-pro span:first-of-type {
+  margin-left: 0.13333333rem;
+}
+.hot-phone .hot-p-wrap span {
+  font-size: 0.29333333rem;
+  color: #999;
+}
+.hot-phone .hot-p-wrap .price {
+  font-size: 0.32rem;
+  color: #cc3333;
+}
+.hot-phone .hot-p-wrap .price em {
+  font-style: normal;
+  font-weight: bold;
+}
+.hot-phone .hot-p-wrap .price del {
+  font-size: 0.24rem;
+  font-weight: bold;
+  color: #999;
+  text-decoration: line-through;
+}
+/*开始 热卖*/
+.hot-sale {
+  padding: 0.4rem 0.33333333rem;
+}
+.hot-sale a {
+  display: block;
+  border-radius: 0.26666667rem;
+  box-shadow: 0 0.13333333rem 0.53333333rem #999;
+}
+.hot-sale a + a {
+  margin-top: 0.53333333rem;
+}
+.hot-sale a > img {
+  width: 100%;
+}
+/*开始  官方精选*/
+.official .off-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.53333333rem 0.33333333rem 0.53333333rem;
+}
+.official .off-wrap li {
+  width: 4.54666667rem;
+  margin: 0;
+}
+.official .off-wrap li img {
+  width: 4.53333333rem;
+  height: 4.53333333rem;
+  margin: 0;
+}
+/*开始 品牌精选*/
+.brand .brand-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.53333333rem 0.33333333rem 2.06666667rem;
+}
+.brand .brand-wrap li {
+  width: 4.54666667rem;
+  margin: 0;
+}
+.brand .brand-wrap li img {
+  width: 4.53333333rem;
+  height: 4.53333333rem;
+  margin: 0;
+}
+.brand .brand-wrap li del {
+  font-weight: bold;
+}
+/*开始 底部*/
+.footer-nav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 1.53333333rem;
+  background: #fff;
+  box-shadow: 0 -2px 37px #aaa;
+}
+.footer-nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.01333333rem;
+  background: #aaa;
+}
+.footer-nav a {
+  flex: 1;
+  text-align: center;
+  padding: 0.16rem 0;
+  font-weight: bold;
+  color: #999;
+  font-size: 0.29333333rem;
+}
+.footer-nav a:first-of-type {
+  background: rgba(181, 177, 177, 0.1);
+  color: #666;
+}
+.footer-nav a img {
+  width: 0.74666667rem;
+  height: 0.74666667rem;
+}
+.footer-nav a span {
+  display: block;
+}

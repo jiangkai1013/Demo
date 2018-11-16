@@ -1,0 +1,369 @@
+@charset 'utf-8';
+@rem:75rem;
+
+body{
+    background: #eee;
+}
+
+/*网页头部*/
+.cz-h-header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    height: 104/@rem;
+    background: #000;
+}
+.cz-h-header .sidebar{
+    position: relative;
+    width: 124/@rem;
+    height: 100%;
+}
+.cz-h-header .sidebar span{
+    display: block;
+    width: 42/@rem;
+    height: 6.5/@rem;
+    background: #eee;
+    border-radius: 1/@rem;
+    margin-bottom: 5/@rem;
+}
+.cz-h-header .sidebar > p{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin:-18/@rem 0 0 -17/@rem;
+}
+
+/*开始  logo*/
+.cz-header h1{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left:-50/@rem;
+    width: 104/@rem;
+    height: 104/@rem;
+    background:url('../images/01-header/1.png') no-repeat top/cover;
+}
+.cz-header h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*开始 banner-wrap*/
+.sec-wrap{
+    margin-bottom: 10/@rem;
+    background: #fff;
+    box-shadow: 0 5/@rem 10/@rem #ddd;
+}
+/*开始  banner*/
+.swiper-container{
+    overflow: hidden;
+    border-radius: 15/@rem;
+    height: 291/@rem;
+    padding-top: 134/@rem;
+    margin:0 25/@rem 0;
+
+}
+.swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+
+/*分页器*/
+.swiper-container .swiper-pagination-bullet{
+    background: #fff;
+    transform: scale(0.8);
+}
+
+/*导航开始*/
+.nav{
+    display: flex;
+    padding-bottom: 35/@rem;
+    margin: 40/@rem 25/@rem 0;
+}
+.nav a{
+    flex: 1;
+    padding: 5/@rem 0;
+    height: 96/@rem;
+    text-align: center;
+}
+.nav a img{
+    width: 50/@rem;
+    height: 50/@rem;
+}
+.nav a span{
+    display: block;
+    margin-top:17/@rem;
+    font-size: 20/@rem;
+    line-height: 30/@rem;
+    color:#999;
+}
+
+
+/*开始  热门商品*/
+
+.sec-wrap h2{
+    position: relative;
+    padding: 0 25/@rem; 
+    height: 83/@rem;
+    line-height: 83/@rem;
+    font-size: 32/@rem;
+    color:#666;
+    text-overflow: ellipsis;   
+}
+.sec-wrap h2:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1/@rem;
+    background: #eee;
+}
+.sec-wrap h2 i{
+    position: absolute;
+    right:25/@rem;
+    
+}
+
+.swiper-container-hot{
+    overflow: hidden;
+    height: 379/@rem;
+    padding: 38/@rem 0;
+}
+
+.hot-c-box .hot-c-wrap{
+    margin: 0 25/@rem;
+    display: flex;
+    align-content: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.hot-c-box .hot-content{
+    // margin: 0 25/@rem;
+    margin-right: 10/@rem;
+    font-size: 24/@rem;
+    text-indent: 1em;
+    line-height: 40/@rem;
+}
+.hot-c-box .hot-content img{
+    display: block;
+    width: 220/@rem;
+    height: 220/@rem;
+    margin-bottom: 20/@rem;
+    border: 1/@rem solid #ddd;
+    border-radius: 10/@rem;
+}
+
+.hot-c-box .hot-content span{
+    display: block;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hot-c-box .hot-content p{
+    font-size: 19/@rem;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hot-c-box .hot-content em{
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    color: hsl(0, 60%, 50%);
+}
+.hot-c-box .hot-content del{
+    display: inline-block;
+    font-size: 18/@rem;
+    color: #999;
+}
+
+/*开始  热门机型*/
+.hot-phone .hot-p-wrap{
+    height: 854/@rem;
+    padding: 40/@rem 25/@rem;
+    font-size: 26/@rem;
+    text-align: center;
+}
+
+.hot-phone .hot-p-wrap img{
+    display: block;
+    height: 700/@rem;
+}
+
+.hot-phone .hot-p-wrap .phone-pro{
+    font-weight: bold;
+}
+.hot-phone .hot-p-wrap .phone-pro h4{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.hot-phone .hot-p-wrap .phone-pro span{
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 10/@rem;
+    line-height: 26/@rem;
+    padding: 0 12/@rem;
+    background: rgb(229, 239, 255);
+    color: rgb(67,109,207);
+    border: 1/@rem solid rgb(172, 197, 249);
+    border-radius: 5/@rem;
+}
+.hot-phone .hot-p-wrap .phone-pro span:first-of-type{
+    margin-left: 10/@rem;
+}
+.hot-phone .hot-p-wrap span{
+    font-size: 22/@rem;
+    color:#999;
+}
+.hot-phone .hot-p-wrap .price{
+    font-size: 24/@rem;
+    color: hsl(0, 60%, 50%)
+}
+.hot-phone .hot-p-wrap .price em{
+    font-style: normal;
+    font-weight: bold;    
+}
+.hot-phone .hot-p-wrap .price del{
+    font-size: 18/@rem;
+    font-weight: bold;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/*开始 热卖*/
+.hot-sale{
+    padding: 30/@rem 25/@rem;
+}
+.hot-sale a{
+    display: block;
+    border-radius: 20/@rem;
+    box-shadow: 0 10/@rem 40/@rem #999;
+}
+.hot-sale a + a{
+    margin-top: 40/@rem;
+}
+.hot-sale a > img{
+    width: 100%;
+}
+
+/*开始  官方精选*/
+.official .off-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40/@rem 25/@rem 40/@rem;
+}
+.official .off-wrap li{
+    width: 341/@rem;
+    margin: 0;
+}
+.official .off-wrap li img{
+    width: 340/@rem;
+    height: 340/@rem;
+    margin: 0;
+}
+/*开始 品牌精选*/
+.brand .brand-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40/@rem 25/@rem 155/@rem;
+}
+.brand .brand-wrap li{
+    width: 341/@rem;
+    margin: 0;
+}
+.brand .brand-wrap li img{
+    width: 340/@rem;
+    height: 340/@rem;
+    margin: 0;
+}
+.brand .brand-wrap li del{
+    font-weight: bold;
+}
+/*开始 底部*/
+.footer-nav{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 115/@rem;
+    background: #fff;
+    box-shadow: 0 -2px 37px #aaa;  
+}
+.footer-nav::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1/@rem;
+    background: #aaa;  
+}
+.footer-nav a{
+    flex:1;
+    text-align: center;
+    padding:12/@rem 0;
+    font-weight: bold;
+    color:#999;
+    font-size: 22/@rem;
+
+}
+.footer-nav a:first-of-type{
+    background: rgba(181, 177, 177, 0.10);
+    color:#666;
+}
+.footer-nav a img{
+    width: 56/@rem;
+    height: 56/@rem;
+}
+.footer-nav a span{
+    display: block;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
